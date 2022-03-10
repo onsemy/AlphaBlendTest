@@ -1,5 +1,5 @@
 import click
-from PIL import Image, ImageOps, ImageChops
+from PIL import Image
 
 @click.command()
 @click.option('--origin-path', help='Original image path')
