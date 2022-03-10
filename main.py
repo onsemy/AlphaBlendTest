@@ -4,7 +4,7 @@ from PIL import Image, ImageOps, ImageChops
 @click.command()
 @click.option('--origin-path', help='Original image path')
 @click.option('--target-path', help='Target image path')
-def hell(origin_path, target_path):
+def blend_func(origin_path, target_path):
     origin = Image.open(origin_path)
     target = Image.open(target_path)
 
@@ -28,4 +28,4 @@ def hell(origin_path, target_path):
     result.show("XOR")
 
 if __name__ == '__main__':
-    hell()
+    blend_func()
